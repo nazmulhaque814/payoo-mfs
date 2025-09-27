@@ -8,6 +8,16 @@ document.getElementById('btn-log')
 console.log('login button click');
 
 // <--step-3: get the phone number -->
-const phonenumber = document.getElementById('ph-number')
-console.log(phonenumber.value);
+const phonenumber = document.getElementById('ph-number').value;
+const pinnumber = document.getElementById('pin-number').value;
+// console.log(phonenumber.value, pinnumber);
+
+//step-4: verify phone number and pin number
+
+if(phonenumber === '01737367954' && pinnumber === '123456'){
+    console.log('You are Logged in');
+    window.location.href = '/home.html';
+} else{
+    alert('Invalid phone number or pin number');
+}
 })
