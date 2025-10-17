@@ -14,9 +14,9 @@ const pinnumber = document.getElementById('pin-number').value;
 
 //step-4: verify phone number and pin number
 
-if(phonenumber === '0177' && pinnumber === '12345'){
+if(phonenumber === '0177' && pinnumber === '123456'){
     console.log('You are Logged in');
-    window.location.href = '/home.html';
+    window.location.href = 'home.html';
 } else{
     alert('Invalid phone number or pin number');
 }
